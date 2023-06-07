@@ -105,6 +105,7 @@ vectorizer = SampleDictVectorizer()
 #### Start by creating an instance of the class and store it our 'vectorizer' variable.
 
 
+### Fit
 ```
 vectorizer.fit(data)
 ```
@@ -122,8 +123,11 @@ vectorizer.feature_indices_
 
 ```
 vectorizer.num_features_
+
 4
 ```
 
 #### We can also check how many features we have fitted
+
+
 
