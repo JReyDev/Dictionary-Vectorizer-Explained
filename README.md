@@ -118,7 +118,7 @@ vectorizer.feature_indices_
 
 {'color': 0, 'size': 1, 'model': 2, 'year': 3}
 ```
-#### We can see what data was stored by printing vectorizer.feature_indices
+#### We can see what data was learned by printing vectorizer.feature_indices
 
 
 ```
@@ -130,4 +130,16 @@ vectorizer.num_features_
 #### We can also check how many features we have fitted
 
 
+### Transform
+
+```
+X_sparse = vectorizer.transform(data)
+
+print(X_sparse)
+
+[[1. 1. 0. 0.]
+ [1. 0. 1. 0.]
+ [1. 0. 0. 1.]]
+```
+#### Finally we transform the data and add a one for each category existing in the dictionaries.
 
