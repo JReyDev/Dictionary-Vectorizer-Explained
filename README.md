@@ -110,4 +110,5 @@ vectorizer.fit(data)
 
 <!--- Hello --->
 ```
+[//]: # (This syntax works like a comment, and won't appear in any output.)
 #### We then fit the data and learn the categories. We can see what data was stored by priting vectorizer.feature_indices
