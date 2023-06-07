@@ -49,3 +49,5 @@ class SampleDictVectorizer:
 self.feature_indices_ = {}
 self.num_features_ = 0 
 ```
+
+### We create a dictionary to store our features as keys and assigning num_features_ that represents the features column index starting at 0.
