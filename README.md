@@ -42,3 +42,10 @@ class SampleDictVectorizer:
         return X_sparse
 
 ```
+
+## Storing features
+
+```
+self.feature_indices_ = {}
+self.num_features_ = 0 
+```
