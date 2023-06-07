@@ -8,6 +8,7 @@
 <img src='https://github.com/JReyDev/Dictionary-Vectorizer-Explained/blob/main/images/homepageconversion.png'>
 
 
+## Create a class to store our data
 ```
 import numpy as np
 
