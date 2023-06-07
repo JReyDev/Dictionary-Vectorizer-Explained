@@ -15,5 +15,30 @@ import numpy as np
 class SampleDictVectorizer:
     def __init__(self):
         self.feature_indices_ = {}
-        self.num_features_ = 0
+        self.num_features_ = 0 
+
+
+    def fit(self, data):
+
+        for dictionary in data: 
+            for feature in dictionary.keys():
+                if feature not in self.feature_indices_: 
+                    self.feature_indices_[feature] = self.num_features_
+                    self.num_features_ += 1 
+
+
+
+    def transform(self, data):
+
+        num_samples = len(data) 
+        X_sparse = np.zeros((num_samples, self.num_features_))
+
+        for index, dictionary in enumerate(data):
+            for feature in dictionary.keys():
+                if feature in self.feature_indices_:
+                    feature_index = self.feature_indices_[feature]
+                    X_sparse[index, feature_index] = 1
+
+        return X_sparse
+
 ```
