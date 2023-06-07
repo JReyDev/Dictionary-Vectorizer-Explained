@@ -65,7 +65,7 @@ def fit(self, data):
 
 #### Our fit function loops through our dictionary list, looks at the keys in each dictionary, and searches in our feature_indices_ dictionary for the keys. If the keys are not found then a entry is added using the feature as the key and num_features_ as the value. 1 is added to num_features_ every loop to prevent any feature to have the same value (column).
 
-## Transforming into sparse matrix
+## Transforming into a sparse matrix
 ```
 def transform(self, data):
 
