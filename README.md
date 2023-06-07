@@ -143,3 +143,4 @@ print(X_sparse)
 ```
 #### Finally we transform the data and add a one for each category existing in the dictionaries.
 
+<img src='https://github.com/JReyDev/Dictionary-Vectorizer-Explained/blob/main/images/finalmatrix.png'>
