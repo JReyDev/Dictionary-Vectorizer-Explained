@@ -51,7 +51,6 @@ self.num_features_ = 0
 ```
 
 #### We create a dictionary to store our features as keys and assigning num_features_ as the value, this represents the features column index starting at 0.
-####
 
 ```
 def fit(self, data):
@@ -82,4 +81,4 @@ def transform(self, data):
 
 #### Our transform function first looks at the amount of dictionaries being passed to act as the number of rows of our matrix, and uses num_features_ as the amount of columns needed.
 
-### It then looks at
+#### Next, the function wil now loop through the list of dictionaries and its indexes, then the keys are verified if theye exist in our feature_indices dictionary, if they do, then our variable 'feature_index' will take the value of the feature in our feature_indices_ which represents the features column starting at 0. 
