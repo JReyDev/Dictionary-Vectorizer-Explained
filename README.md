@@ -63,3 +63,22 @@ def fit(self, data):
 ```
 
 #### Our fit function loops through our data list, looks at the keys in each dictionary, and searches in our feature_indices_ dictionary for the keys. If the keys are not found then a entry is added using the feature as the key and num_features_ as the value. 1 is added to num_features_ every loop to prevent any feature to have the same value (column).
+
+
+```
+def transform(self, data):
+
+    num_samples = len(data) 
+    X_sparse = np.zeros((num_samples, self.num_features_))
+    
+    for index, dictionary in enumerate(data):
+        for feature in dictionary.keys():
+            if feature in self.feature_indices_:
+                feature_index = self.feature_indices_[feature]
+                X_sparse[index, feature_index] = 1
+    return X_sparse
+```
+
+#### Our transform function first looks at the amount of dictionaries being passed to act as the number of rows of our matrix, and uses num_features_ as the amount of columns needed.
+
+### It then looks at
