@@ -8,10 +8,11 @@
 <img src='https://github.com/JReyDev/Dictionary-Vectorizer-Explained/blob/main/images/homepageconversion.png'>
 
 
-'''import numpy as np
+```
+import numpy as np
 
 class SampleDictVectorizer:
     def __init__(self):
         self.feature_indices_ = {}
         self.num_features_ = 0
-'''
+```
