@@ -97,7 +97,17 @@ data = [
     {'color': 'green', 'year': '2023'}
 ]
 ```
+#### This is our sample data with similar and different categories.
 ```
 vectorizer = SampleDictVectorizer()
-#<__main__.SampleDictVectorizer object at 0x000002734FB187D0>
+
 ```
+#### Start by creating an instance of the class and store it our 'vectorizer' variable.
+
+
+```
+vectorizer.fit(data)
+
+[//]: # (Hello)
+```
+#### We then fit the data and learn the categories. We can see what data was stored by priting vectorizer.feature_indices
