@@ -108,10 +108,6 @@ vectorizer = SampleDictVectorizer()
 ```
 vectorizer.fit(data)
 
-{::comment}
-comment text 1
-comment text 2
-ignored by parser
-{:/comment}
+<!--- Hello --->
 ```
 #### We then fit the data and learn the categories. We can see what data was stored by priting vectorizer.feature_indices
