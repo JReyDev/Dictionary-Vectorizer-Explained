@@ -52,6 +52,7 @@ self.num_features_ = 0
 
 #### We create a dictionary to store our features as keys and assigning num_features_ as the value, this represents the features column index starting at 0.
 
+## Learning the categories
 ```
 def fit(self, data):
 
@@ -64,7 +65,7 @@ def fit(self, data):
 
 #### Our fit function loops through our dictionary list, looks at the keys in each dictionary, and searches in our feature_indices_ dictionary for the keys. If the keys are not found then a entry is added using the feature as the key and num_features_ as the value. 1 is added to num_features_ every loop to prevent any feature to have the same value (column).
 
-
+## Transforming into sparse matrix
 ```
 def transform(self, data):
 
