@@ -88,4 +88,16 @@ return X_sparse
 
 #### Finally, We need to add a 1 for every category existing in our dictionary being looped to our sparse matrix, the index of the dictionary in the input list, will now be axis 0 and the feature_index will represent the features column axis 1 for the feature. With both coordinates selected the entry in our sparse matrix will now become a 1.
 
+## Example
 
+```
+data = [
+    {'color': 'orange', 'size': 'small'},
+    {'color': 'white', 'model': 'v1.01'},
+    {'color': 'green', 'year': '2023'}
+]
+```
+```
+vectorizer = SampleDictVectorizer()
+#<__main__.SampleDictVectorizer object at 0x000002734FB187D0>
+```
