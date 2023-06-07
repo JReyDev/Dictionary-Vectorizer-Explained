@@ -73,7 +73,7 @@ def transform(self, data):
     
 ```
 
-#### Our transform function first looks at the amount of dictionaries being passed to act as the number of rows of our matrix, and uses num_features_ as the amount of columns needed.
+#### Then, our transform function first looks at the amount of dictionaries being passed to act as the number of rows of our matrix, and uses num_features_ as the amount of columns needed.
 
 ```
 for index, dictionary in enumerate(data):
@@ -84,3 +84,5 @@ for index, dictionary in enumerate(data):
 return X_sparse
 ```
 #### Next, the function wil now loop through the list of dictionaries and its indexes, then the keys are verified if theye exist in our feature_indices dictionary, if they do, then our variable 'feature_index' will take the value of the feature in our feature_indices_ which represents the features columns starting at 0. 
+
+#### Finally, We need to add a 1 for every category existing in our dictionary being looped to our sparse matrix, the index of the dictionary in the input list, will now be axis 0 and the feature_index will represent the features column axis 1 for the feature. With both coordinates selected the entry in our sparse matrix will now become a 1.
