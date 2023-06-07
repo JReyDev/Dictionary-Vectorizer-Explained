@@ -109,10 +109,5 @@ vectorizer = SampleDictVectorizer()
 vectorizer.fit(data)
 
 ```
-<!--
-    this is a an html comment.
-    the bad part of this is that it will appear in
-    any document you generate from this markdown, such as if
-    you convert this markdown to HTML with MacDown or Pandoc.
--->
+[]: # (This is a comment)
 #### We then fit the data and learn the categories. We can see what data was stored by priting vectorizer.feature_indices
