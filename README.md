@@ -83,4 +83,4 @@ for index, dictionary in enumerate(data):
            X_sparse[index, feature_index] = 1
 return X_sparse
 ```
-#### Next, the function wil now loop through the list of dictionaries and its indexes, then the keys are verified if theye exist in our feature_indices dictionary, if they do, then our variable 'feature_index' will take the value of the feature in our feature_indices_ which represents the features column starting at 0. 
+#### Next, the function wil now loop through the list of dictionaries and its indexes, then the keys are verified if theye exist in our feature_indices dictionary, if they do, then our variable 'feature_index' will take the value of the feature in our feature_indices_ which represents the features columns starting at 0. 
