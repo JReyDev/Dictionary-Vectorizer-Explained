@@ -107,7 +107,12 @@ vectorizer = SampleDictVectorizer()
 
 ```
 vectorizer.fit(data)
-[]: # (This is a comment)
 ```
 
-#### We then fit the data and learn the categories. We can see what data was stored by priting vectorizer.feature_indices
+#### We then fit the data and learn the categories. We can see what data was stored by printing vectorizer.feature_indices
+
+```
+vectorizer.feature_indices_
+
+{'color': 0, 'size': 1, 'model': 2, 'year': 3}
+```
