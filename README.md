@@ -110,7 +110,7 @@ vectorizer = SampleDictVectorizer()
 vectorizer.fit(data)
 ```
 
-#### We then fit the data and learn the categories.
+#### We then call the fit method the data and learn the categories.
 
 
 ```
@@ -141,6 +141,6 @@ print(X_sparse)
  [1. 0. 1. 0.]
  [1. 0. 0. 1.]]
 ```
-#### Finally we transform the data and add a one for each category existing in the dictionaries.
+#### Finally with the transform method, we add a one for each category existing in the dictionaries to our sparse matrix.
 
 <img src='https://github.com/JReyDev/Dictionary-Vectorizer-Explained/blob/main/images/finalmatrix.png'>
