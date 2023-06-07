@@ -7,7 +7,9 @@
 
 <img src='https://github.com/JReyDev/Dictionary-Vectorizer-Explained/blob/main/images/homepageconversion.png'>
 
+```
 
+```
 ```
 import numpy as np
 
