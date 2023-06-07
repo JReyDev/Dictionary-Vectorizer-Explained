@@ -51,3 +51,15 @@ self.num_features_ = 0
 ```
 
 #### We create a dictionary to store our features as keys and assigning num_features_ that represents the features column index starting at 0.
+
+```
+def fit(self, data):
+
+        for dictionary in data: 
+            for feature in dictionary.keys():
+                if feature not in self.feature_indices_: 
+                    self.feature_indices_[feature] = self.num_features_
+                    self.num_features_ += 1 
+```
+
+### Our fit function loops through our data list, looks at the keys in each dictionary, and searches in our feature_indices_ dictionary for the keys. #### If the keys are not found then a entry is added using the feature as the key and num_features_ as the value.
