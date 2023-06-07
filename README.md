@@ -62,4 +62,4 @@ def fit(self, data):
                     self.num_features_ += 1 
 ```
 
-### Our fit function loops through our data list, looks at the keys in each dictionary, and searches in our feature_indices_ dictionary for the keys. #### If the keys are not found then a entry is added using the feature as the key and num_features_ as the value.
+#### Our fit function loops through our data list, looks at the keys in each dictionary, and searches in our feature_indices_ dictionary for the keys. If the keys are not found then a entry is added using the feature as the key and num_features_ as the value. 1 is added to num_features_ every loop to prevent any feature to have the same value (column).
