@@ -9,7 +9,7 @@
 
 
 ## Create a class to store our data
-#### This tutorial was written in python 3.11
+#### This tutorial was written in Python 3.11
 ```
 import numpy as np
 
