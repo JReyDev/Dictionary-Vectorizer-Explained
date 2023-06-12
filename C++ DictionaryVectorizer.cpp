@@ -32,7 +32,7 @@ void Fit(const std::vector<std::unordered_map<std::string, std::string>>& data) 
                 std::cout << "Key " << key << " exists as a feature" << std::endl;
             }
             else {
-                std::cout << "Key " << key << " does not exist as a feature" << std::endl;
+                std::cout << "Key " << key << " does not exist as a feature. Added" << std::endl;
 
                 feature_indices_[key] = num_features_;
 
