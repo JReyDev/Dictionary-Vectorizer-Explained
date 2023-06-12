@@ -1,3 +1,6 @@
+//This is for informational purposes only
+//This is a WIP vectorizer written in C++
+
 #include <iostream>
 #include <unordered_map>
 #include <vector>
