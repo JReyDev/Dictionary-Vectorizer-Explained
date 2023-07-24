@@ -32,8 +32,6 @@ public:
 
             for (const auto& mapkey : map) {
 
-                //std::cout << mapkey.first << " " << mapkey.second << std::endl;
-
                 const std::string& key = mapkey.first;
 
                 auto search = feature_indices_.find(key);
@@ -59,20 +57,11 @@ public:
 
         std::size_t num_samples = data.size();
 
-        //std::cout << "num_samples = " << num_samples << std::endl;
-
         Eigen::SparseMatrix<double> sparseMatrix(num_samples, num_features_);
-
-        //std::cout << "Sparse Matrix: " << std::endl;
-
-        //std::cout << sparseMatrix << std::endl;
-
 
         int index_count = 0;
 
         for (const auto& hash : data) { 
-
-            //std::cout << " Index Count:  " << index_count << std::endl;
 
             index_count++;
 
