@@ -3,6 +3,8 @@
 #### This is for informational purposes only.
 #### This is an explanation of the general implementation of the dictionary vectorizer in scikit-learn aka one hot encoding. The purpose of this vectorizer is feature extraction, to convert dictionary categorical features into a sparse matrix for machine learning algorithms.
 
+#### This vectorizer essentially creates a sparse matrix that contains the presence of categorical features and their enconding.
+
 
 
 <img src='https://github.com/JReyDev/Dictionary-Vectorizer-Explained/blob/main/images/homepageconversion.png'>
